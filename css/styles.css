@@ -1,0 +1,297 @@
+*{
+	margin: opx;
+	padding: o auto;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+body{
+	background: rgb(149,145,227);
+	background: linear-gradient(90deg, rgba(149,145,227,1) 0%, rgba(94,195,174,1) 27%, rgba(0,212,255,1) 100%);
+}
+
+header{
+	background: rgb(7, 12, 20, 0.6);
+	height: 100px;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+}
+
+nav ul{
+	display: flex;
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	line-height: 100px;
+	font-size: 1.5em;
+}
+
+#inicio{
+	background-image: url(../img/1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+#inicio.container{
+	background-color: rgba(7, 12, 20, 0.7);
+	height: 100vh;
+	color: #fff;
+	display: flex;
+	flex-direction: center;
+}
+
+.container{
+	background-color: rgba(7, 12, 20, 0.7);
+	height: 100vh;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-inicio{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.titulo{
+	animation: entrada-texto 2s ease-in-out 1;
+}
+
+@keyframes entrada-texto{
+	from{
+		transform: translateY(200px);
+	}
+	to{
+		transform: translateY(10px);
+	}
+}
+
+.titulo h1{
+	font-size: 3em;
+}
+
+
+.imagen{
+	margin-left: 50px;
+	filter: drop-shadow(5px 5px 20px purple);
+	animation: agrandar-imagen 1s ease-in-out 1 backwards;
+}
+
+@keyframes agrandar-imagen{
+	0%{
+		transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.8);
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
+
+#acercade{
+	background-image: url(../img/2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.caja{
+	width: 400px;
+	height: 500px;
+/*	background-color: #f2f2f2;*/
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+	text-align: center;
+	color: #fff;
+	box-shadow: 10px 5px 20px purple;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+}
+
+.cajas{
+	width: 100%;
+	height: auto;
+	min-height: 100px;
+	justify-content: center;
+	display: flex;
+}
+
+.cajas div{
+	margin-right: 50px;
+}
+
+.cajas h2{
+	font-weight: bold;
+	font-size: 20px;
+	color: yellow;
+}
+
+.image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.image img{
+	width: 50%;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-left: 50px;
+}
+
+hr{
+	width: 80%;
+}
+
+h3{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+button{
+	width: 60%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	color: purple;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#servicios{
+	background-image: url(../img/3.png);
+	background-size: cover;
+	height: 100vh;
+}
+
+#servicios .container{
+	background-image:rgba(7, 12, 20, 0.7);
+	height: 100vh;
+	color: #fff;
+}
+
+#contacto{
+	background-image: url(../img/4.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+.container_contact{
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	border-radius: 5px;
+	box-shadow: 5px 10px 30px;
+	backdrop-filter: blur(2px);
+	display: flex;
+	flex-direction: column;
+	gap: 1.2em;
+}
+
+form{
+	width: 80%;
+	height: 20px auto;
+}
+
+form input{
+	width: 80%;
+	background-color: rgba(7, 12, 20, 0.4);
+	color: #fff;
+	padding-top: 5px 2px;
+	font-size: 1.2em;
+	border-radius: 10px;
+
+}
+
+textarea{
+	width: 80%;
+	background-color: rgba(7, 12, 20, 0.4);
+	color: #fff;
+	resize: none;
+	border-radius: 5px;
+}
+
+form input[type="submit"]{
+	width: 100%;
+	color: #fff;
+	background-color: orange;
+	padding: 5px 0;
+}
+
+form input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: skyblue;
+}
+
+
+footer{
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.info{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.dato1{
+	padding: 0 5px;
+}
+
+p>i{
+	padding: 0 10px;
+}
+
+iframe{
+	width: 250px;
+	height: 200px;
+	box-shadow: 2px 2px 20px #f5f5f6;
+}
+
+footer .redes{
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+i{
+	font-size: 1.3em;
+	padding: 0 20px;
+}
+
+i:hover{
+	cursor: pointer;
+	color: skyblue;
+}
+
+.pie{
+	background-color: rgba(105, 105, 105, 0.2);
+	display: flex;
+	justify-content: space-evenly;
+}
+
+span{
+	color: rgb(0 80 100;
+	font-weight: 700;
+}
